@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTech Credit Card Fraud Detection Portfolio</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; background-color: #f9f9f9; color: #333; }
+        h1, h2 { color: #2c3e50; }
+        a { text-decoration: none; color: #2980b9; }
+        a:hover { text-decoration: underline; }
+        ul { list-style-type: none; padding-left: 0; }
+        li { margin: 10px 0; }
+        .badge { display: inline-block; margin-right: 10px; }
+        hr { border: none; border-top: 1px solid #ddd; margin: 30px 0; }
+    </style>
+</head>
+<body>
+
+    <h1>FinTech Credit Card Fraud Detection Portfolio</h1>
+
+    <!-- Badges -->
+    <img class="badge" src="https://img.shields.io/github/repo-size/username/repo-name" alt="Repo Size">
+    <img class="badge" src="https://img.shields.io/badge/python-3.12-blue" alt="Python Version">
+    <img class="badge" src="https://img.shields.io/github/license/username/repo-name" alt="License">
+
+    <hr>
+
+    <h2>📌 Index</h2>
+    <ul>
+        <li><a href="#project-overview">Project Overview</a></li>
+        <li><a href="#project-structure">Project Structure</a></li>
+        <li><a href="#eda">Exploratory Data Analysis (EDA)</a></li>
+        <li><a href="#feature-engineering">Feature Engineering</a></li>
+        <li><a href="#data-preprocessing">Data Preprocessing</a></li>
+        <li><a href="#ml-models">Machine Learning Models</a>
+            <ul>
+                <li><a href="#logistic-regression">Logistic Regression</a></li>
+                <li><a href="#random-forest">Random Forest</a></li>
+            </ul>
+        </li>
+        <li><a href="#key-takeaways">Key Takeaways</a></li>
+        <li><a href="#next-steps">Next Steps</a></li>
+        <li><a href="#libraries-used">Libraries Used</a></li>
+        <li><a href="#references">References</a></li>
+    </ul>
+
+    <hr>
+
+    <h2 id="project-overview">Project Overview</h2>
+    <p>This project focuses on analyzing credit card transactions to detect fraudulent activity using feature engineering and machine learning.</p>
+
+    <h2 id="project-structure">Project Structure</h2>
+    <pre>
+data/
+└── CreditCard_FraudDetection.csv
+notebooks/
+├── EDA.ipynb
+├── Feature_Engineering.ipynb
+└── Modeling.ipynb
+src/
+├── preprocessing.py
+├── feature_engineering.py
+└── models.py
+README.md
+    </pre>
+
+    <h2 id="eda">Exploratory Data Analysis (EDA)</h2>
+    <p>Visualizations, insights, and key findings from dataset exploration, including class distribution, transaction amounts, and hourly fraud patterns.</p>
+
+    <h2 id="feature-engineering">Feature Engineering</h2>
+    <p>New features include <code>hour</code>, <code>is_night</code>, and <code>amount_log</code>.</p>
+
+    <h2 id="data-preprocessing">Data Preprocessing</h2>
+    <p>Scaling, train/test split, and class balancing using SMOTE.</p>
+
+    <h2 id="ml-models">Machine Learning Models</h2>
+
+    <h3 id="logistic-regression">Logistic Regression</h3>
+    <p>Initial and threshold-tuned metrics for detecting fraud.</p>
+
+    <h3 id="random-forest">Random Forest</h3>
+    <p>Random Forest with hyperparameter tuning and threshold optimization achieved high precision and recall for fraud detection.</p>
+
+    <h2 id="key-takeaways">Key Takeaways</h2>
+    <p>Insights about handling imbalanced classes, feature engineering importance, and model performance.</p>
+
+    <h2 id="next-steps">Next Steps</h2>
+    <p>Ideas for model improvement: Gradient Boosting, feature selection, deployment, and sequential deep learning.</p>
+
+    <h2 id="libraries-used">Libraries Used</h2>
+    <ul>
+        <li>pandas</li>
+        <li>numpy</li>
+        <li>matplotlib</li>
+        <li>seaborn</li>
+        <li>plotly</li>
+        <li>scikit-learn</li>
+        <li>imbalanced-learn</li>
+    </ul>
+
+    <h2 id="references">References</h2>
+    <ul>
+        <li><a href="https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud">Credit Card Fraud Detection Dataset</a></li>
+        <li>SMOTE: Synthetic Minority Oversampling Technique</li>
+        <li>Scikit-learn Documentation</li>
+    </ul>
+
+</body>
+</html>
